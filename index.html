@@ -1,449 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>BetterExtreme</title>
-        <meta name="description" content="Love BetterExtreme." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Bootstrap 4-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-        <!--icons-->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="style.css" />
-        
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-@import url('https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700,900');
-
-html,
-body {
-    width: 100%;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
     height: 100%;
-}
-body{
-    font-family: 'Catamaran', sans-serif;
-    font-size: 16px;
-}
-.navbar-brand{
-    font-weight: 900;
-    color: #fff;
-}
-h1,h2,h3,h4,h5,h6{
-    font-weight: 600;
-}
-.brand-logo{
-    width: 180px;
-}
-.navbar{
-    min-height: 80px;
-}
-.navbar-nav .nav-item .nav-link{
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-}
-.navbar .nav-item .active, .navbar .nav-link:hover, .navbar .navbar-brand:hover{
-    color: #ffb300 !important;
-}
-.hero{
-    height: 100vh;
-    min-height: 600px;
-}
-.hero h1{
-    margin-bottom: 30px;
-    font-weight: 900;
-}
-.hero h2{
-    font-weight: 200;
-    line-height: 45px;
-}
-.store-img{
-    width: 170px;
-    padding-bottom: 10px;
-}  
-a {
-    color: #512DA8;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-a:hover,
-a:focus {
-    color: #512DA8;
-    outline: 0;
-    text-decoration: none;
-}
-a.btn:hover,
-a.btn:focus {
-    color: #fff;
-}
-.bg-inverse a{
-    color: #fff;
-}
-section{
-    padding: 80px 0px;
-}
-.img-team{
-    width: 120px;
-}
-.card-outline-primary{
-    border: solid 1px #512DA8;
-}
-.sticky-navigation{
-    top: -100px;
-}
-/*===============================================
-* Background Colors
-================================================*/
-.bg-texture{
-    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-    background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-}
-.bg-texture-collage{
-    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 67%, transparent 33%),
-        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
-    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 67%, transparent 33%),
-        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
-    background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 67%, transparent 33%),
-        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
-}
-.bg-alt {
-    background-color: #fff;
-}
-.bg-faded{
-    background-color: #EDECEC;
-}
-.bg-grey{
-    background-color: #F9F9FA;
-}
-.bg-primary{
-    background-color: #512DA8 !important;
-}
-.bg-orange{
-    background-color: #ffb300;
-}
-/*===============================================
-* Text Colors
-================================================*/
-.text-faded {
-    color: #EDECEC;
-}
-.text-dark {
-    color: #37474F;
-}
-.text-muted{
-    color: #999 !important;
-}
-.text-light {
-    color: #fff;
-}
-.text-light:hover,.text-light:focus {
-    color: #eee;
-    text-decoration:none;
-}
-.text-primary {
-    color: #512DA8 !important;
-}
-.text-orange{
-    color: #ffb300 !important;
-}
-/*===============================================
-* Icon Sizes
-================================================*/
-.material-icons.dp24 , .icon-sm{
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
+    color: #777;
+    line-height: 1.8;
+
+
+      
+ }
+
+@keyframes move1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 00px;
+  }
 }
 
-.material-icons.dp36, .icon-md {
-  font-size: 36px;
-  width: 36px;
-  height: 36px;
-  vertical-align: middle;
+@keyframes move2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 00px 100vw;
+  }
 }
 
-.material-icons.dp48, .icon-lg{
-  font-size: 48px;
-  width: 48px;
-  height: 48px;
-  vertical-align: middle;
 }
-.icon-box{
-    color:#fff;
-    background-color: #512DA8;
-    vertical-align: middle;
-    border-radius: 50px !important;
-    padding:20px;
-    display: inline;
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+ 
 }
-/*===============================================
-* Colored Buttons
-================================================*/
-.btn {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+
+    background-color: gray;
+    animation: move1 20s linear infinite; 
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);    
+    min-height: 100%;
+     
+      
+
 }
-.btn-outline-white {
-    color: #fff !important;
-    background-image: none;
-    background-color: transparent;
-    border-color: #fff;
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-color: #c0c0c0;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+  
+    min-height: 400px;
 }
-.btn-outline-white:hover {
-    background: rgba(255, 255, 255, 0.2) !important;
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-color: gray;
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+    min-height: 400px;
+     animation: move2 20s linear infinite;
 }
-.btn-white {
-    color: #512DA8;
-    background-color: #fff;
-    border-color: #fff;
-}
-.btn-white:hover {
-    background: transparent !important;
-    color: #fff !important;
-}
-.btn-primary{
-    background-color: #512DA8 !important;
-    border-color: #512DA8 !important;
-}
-.btn-radius{
-    border-radius: 50px;
-}
-/*===============================================
-* Borders Utilities
-================================================*/
-.border-none{
-    border: none !important;
-    border-color: transparent !important;
-}
-.border-all{
-    border: 1px solid #DEE5E5 !important;
-}
-.border-left{
-    border-left: 1px solid #DEE5E5 !important;
-}
-.border-right{
-    border-right: 1px solid #DEE5E5 !important;
-}
-.border-top{
-    border-top: 1px solid #DEE5E5 !important;
-}
-.border-bottom{
-    border-bottom: 1px solid #DEE5E5 !important;
-}
-/*social icons*/
-.text-twitter-alt, .text-facebook-alt, .text-linkedin-alt, .text-google-alt, .text-github-alt{
-    color:#999;
-}
-.text-twitter, .text-twitter-alt:hover{
-    color:#00aced;
-}
-.text-facebook, .text-facebook-alt:hover{
-    color: #3b5998;
-}
-.text-google, .text-google-alt:hover{
-    color: #dd4b39;
-}
-.text-linkedin, .text-linkedin-alt:hover{
-    color: #007bb6;
-}
-.text-github, .text-github-alt:hover{
-    color: #000000;
-}
-/*
-Pricing tables
-*/
-.pricing-list{
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.pricing-list li {
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 15px;
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
 </style>
+<body>
 
-        <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  overflow: hidden;
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button" style="color: #3f51b5;" >CSD Technologies</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <a href="itms-services://?action=download-manifest&url=https://better-extreme.herokuapp.com/BetterExtreme.plist">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CLICK <span class="w3-hide-small">TO</span> INSTALL</span>
+  </div></a>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT CSD</h3>
+  <p class="w3-center"><em>Design and Develop</em></p>
+  <p>We Love Making Beautiful Design and Develop them into Applications</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>OUR DESIGN TEAM</b></p><br>
+       <p><b><i class="w3-margin-right"></i>Zeeshan</b></p>
+       <p><b><i class="w3-margin-right"></i>Sreejith</b></p>
+       <p><b><i class="w3-margin-right"></i>Jayguru</b></p>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Founded in 2007, CSD has been providing Audio Visual Design, Interactive Experience Design, Automation Solutions and Services for the Retail, Commercial and Residential Space with a team of programmers and designers who always love challenges.<br/><br/></p>
+
+<p>Some of our key services involve Interactive Digital Signage, Mobile Apps, Holographic Content, Augmented Reality, Wayfinding Solutions, Projection Mapping and Automation of Residential, Corporate, Retail and Hospitality spaces.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">We really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>App Design and Development</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design and Development</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE WORK</h3>
+  <p class="w3-center"><em>We'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bangalore, INDIA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 80 4091085<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@csdav.com <br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <!--<form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>-->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+  </div>
+  <p>Powered by <a href="https://www.csdav.com" title="CSD Technologies" target="_blank" class="w3-hover-text-green">CSD Technologies</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(12.938501, 77.617854); 
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: inherit;
-}
-*::after, *::before {
-  box-sizing: inherit;
-}
-
-body .send-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
 }
 
-@keyframes icon-animation {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  33% {
-    transform: rotate(-120deg) scale(4);
-  }
-  66% {
-    transform: rotate(-240deg) scale(4);
-  }
-  100% {
-    transform: rotate(-360deg) scale(1);
-  }
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
-@keyframes input-shadow {
-  0% {
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-  }
-  40% {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    box-shadow: none;
-  }
-  70% {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-  }
-}
-.icon-wrapper-animation {
-  animation: icon-animation 1.5s linear;
-  transition: color 0.6s ease;
-  color: #66bb6a;
-}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwv4htXHGzEGgfMwKEQqYVmFXKzgNhj18&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 
-.clicked {
-  transform: translate(-50%, calc(-50% + 1px)) !important;
-  transition: transform 0.15s ease;
-  animation: input-shadow 0.15s ease;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-}
-.clicked > .text {
-  transform: translateY(1px);
-  transition: transform 0.15s ease-out;
-}
-
-body {
-  background-color: #d81b60;
-}
-body .send-button {
-  background-color: #c51162;
-  width: 250px;
-  height: 45px;
-  border-radius: 2px;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.15s;
-  text-shadow: 1px 2px 1px rgba(77, 9, 36, 0.6);
-}
-body .send-button .text {
-  position: absolute;
-  left: 10px;
-  font-size: 22px;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
-  line-height: 45px;
-  font-family: "Roboto";
-  font-weight: 700;
-  color: #f8bbd0;
-  text-transform: uppercase;
-}
-body .send-button .icon-wrapper {
-  position: absolute;
-  right: -65px;
-  bottom: -10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  line-height: 45px;
-  color: #f8bbd0;
-}
-body .send-button .icon-wrapper [class*="icon-"] {
-  position: absolute;
-  left: 100px;
-  bottom: 10px;
-  transition: color 0.6s ease;
-}
-body .send-button .icon-wrapper .icon-1 {
-  transform: rotate(15deg);
-  font-size: 23px;
-  font-size: 2.3rem;
-  opacity: 1;
-}
-body .send-button .icon-wrapper .icon-2 {
-  opacity: 0;
-  font-size: 25px;
-  font-size: 2.5rem;
-}
-
-    </style>
-
-    </head>
-    <body>
-       
-        <!--main section-->
-        <section class="bg-texture hero pt-5">
-            <div class="container">
-                <div class="row d-sm-flex">
-                    <div class="col-sm-6 text-white wow fadeIn">
-                        <div class="mt-5 pt-5 hidden-sm-down"></div>
-                        <h1>BetterExtreme</h1>
-                        <h2>A beautiful <span class="text-orange">Control</span> app that you 
-                        can trust on</h2>
-                        <p class="mt-4 lead">
-                            BetterExtreme Admin App is for the Employees to control the Video Playlist in Public and Private Views.
-                        </p>
-                        
-                        <a href="itms-services://?action=download-manifest&url=https://better-extreme.herokuapp.com/BetterExtreme.plist">
-                        <div class="send-button" style="left: 21%; top: 185%; border-radius: 8px; width: 211px">
-                            <span class="text">Install Now</span>
-                            <span class="icon-wrapper">
-                                <span class="icon-1 ion-paper-airplane"></span>
-                                <span class="icon-2 ion-checkmark"></span>
-                            </span>
-                        </div></a>
-
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-        <script src="scripts.js"></script>
-        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-        <script  src="button.js"></script>
-    </body>
+</body>
 </html>
